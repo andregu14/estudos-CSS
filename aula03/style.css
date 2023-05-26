@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    /* Cores em CSS e propriedades de Fontes*/
+    color: blueviolet;
+    font-size: 9.6rem;
+    font-weight: 900;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Roboto', arial, cursive;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', arial, cursive;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+.novo-em {
+    font-size: 80%;
+}
+
+.novo-em > h2 {
+    font-size: 3.2rem;
+}
+
+a {
+    font-size: 2.4rem;
+    color: red;
+}
+
+ 
+a:visited {
+    /* Algumas pseudo classes */
+    color: darkgreen;
+}
+
+a:hover {
+    color: coral;
+}
+
+.bg { 
+    /* Imagens e propriedades de background */
+    height: 30vh;
+    width: 100vw;
+    background-color: #555;
+    background-image: url('https://images.unsplash.com/photo-1685009341393-fb74925216a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+p {
+    /* Algumas formatacoes de textos uteis em paragrafos */
+    font-size: 1.8rem;
+    text-align: justify;
+    line-height: 1.5em;
+    text-indent: 4em;
+}
