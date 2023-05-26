@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    /* O box sizing: border-box, serve para que a caixa sempre mantenha o tamanho dado a ela */
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.2rem;
+}
+
+h1 {
+    /* Cores em CSS e propriedades de Fontes*/
+    color: blueviolet;
+    font-size: 9.6rem;
+    font-weight: 800;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Roboto', arial, cursive;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', arial, cursive;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+td, th {
+    /* Estilos para tabelas */
+    border: 1px solid black;
+    padding: 4px;
+}
+
+table {
+    font-size: 2.4rem;
+    border-collapse: collapse;
+}
+
+table > thead {
+    background-color: steelblue;
+    color: white;
+
+    /* Posição Sticky; Gruda o elemento no topo da tela indica por top */
+    position: sticky;
+    top: -1px;
+}
+
+table tr:nth-child(even) {
+    background-color: #aaa;
+}
+
+ul, ol {
+    /* Estilos para listas */
+    font-size: 2.4rem;
+    padding-left: 4.4rem;
+    list-style: square;
+}
+
+ol {
+    list-style: upper-roman;
+} 
+
+.novo-em {
+    font-size: 80%;
+}
+
+.novo-em > h2 {
+    font-size: 3.2rem;
+}
+
+a {
+    font-size: 2.4rem;
+    color: red;
+}
+
+a:visited {
+    /* Algumas pseudo classes */
+    color: darkgreen;
+}
+
+a:hover {
+    color: coral;
+}
+
+.bg { 
+    /* Imagens e propriedades de background */
+    height: 30vh;
+    width: 100vw;
+    background-color: #555;
+    background-image: url('https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFwdG9wfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
+}
+
+p {
+    /* Algumas formatacoes de textos uteis em paragrafos */
+    font-size: 1.8rem;
+    text-align: justify;
+    line-height: 1.5em;
+    text-indent: 4em;
+}
+
+.boxes {
+    /* Caixa pai com display flex */
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    /* Exemplo de modelo de caixas */
+    height: 10rem;
+    width: 20rem;
+    padding: 1.5rem;
+    margin: 1.5rem;
+
+    color: white;
+    border: 2px solid #555;
+    border-radius: 1rem;
+    display: inline-block;
+    background-color: blue;
+
+    /* Position e Introdução à Flexbox */
+    flex: 30%;
+}
+
+/* .box:nth-child(1) {
+    position: absolute;
+} */
+
+img {
+    height: 10rem;
+    width: 20rem;
+    object-fit: cover;
+}
